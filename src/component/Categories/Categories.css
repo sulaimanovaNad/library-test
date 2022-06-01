@@ -1,0 +1,16 @@
+.genre{
+    display: flex;
+}
+
+.genre-item{
+    cursor:pointer
+}
+
+.genre-item-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.genre-item:hover{
+    background-color: rgba(0, 0, 0, 0.267);
+}
