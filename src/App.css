@@ -1,36 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@1&display=swap');
 
 img{
   width: 100%;
 }
 
-.App{
-  width: 90%;
-  margin: 50px auto;
-  border: 5px solid rgb(123, 6, 158);
-  border-radius: 5px;
-  padding: 20px;
-  font-family: 'Inconsolata', monospace;
-  font-size: 25px;
-}
-
 input{
   padding: 10px;
-  border: 2px solid rgb(123, 6, 158);
   border-radius: 5px;
   outline: none;
   margin-right: 10px;
 }
 
 button{
-  background: rgb(123, 6, 158);
-  color: #fff;
-  border: none;
-  border-radius: 5px;
+  border: 2px solid rgb(7, 48, 46);
+  color: rgb(7, 48, 46);
+  border-radius: 15px;
+  background-color: #fff;
   width: 150px;
   height: 35px;
   cursor: pointer;
   padding: 10px;
+}
+
+button:hover{
+  background-color: rgb(7, 48, 46);
+  color: #fff;
+}
+
+.container{
+  width: 90%;
+  margin: auto;
 }
 
 .image{

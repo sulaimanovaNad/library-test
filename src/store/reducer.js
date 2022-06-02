@@ -7,21 +7,22 @@ const initialState = {
       id: uuidv4(),
       name: 'Harry Potter and the Chamber of Secrets',
       author: '	J. K. Rowling',
-      genre: 'fantasy'
+      genre: 'Fantasy'
     },
     {
       id: uuidv4(),
       name: 'The Ginger Man',
       author: 'J. P. Donleavy',
-      genre: 'novel'
+      genre: 'Novel'
     },
     {
       id: uuidv4(),
       name: 'The Girl on the Train',
       author: 'Paula Hawkins',
-      genre: 'thriller'
+      genre: 'Thriller'
     }
-  ]
+  ],
+  categories:[]
 }
 
 export default function reducer(state = initialState, action) {
@@ -39,7 +40,11 @@ export default function reducer(state = initialState, action) {
     case actions.BOOK_GENRE:
       return {
         ...state,
-        books: [state.books.map(b => action.payload.genre == b.genre)]
+        categories: state.books.filter(b => {
+          if(action.payload.genre == b.genre){
+            return b
+          }
+        })
       };
     default:
       return state;

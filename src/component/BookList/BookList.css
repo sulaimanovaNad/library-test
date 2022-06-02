@@ -1,11 +1,30 @@
 .book{
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 20px;
+    font-size: 20px;
+    border-bottom: 3px solid rgba(7, 48, 46, 0.664);
 }
   
 .links-book{
     display: flex;
 }
   
+.name{
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(9, 44, 31);
+    font-weight: 800;
+    font-family: 'Tiro Devanagari Hindi', serif;
+}
+
+.author{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.genre{
+    font-family: 'Tiro Devanagari Hindi', serif;
+}
