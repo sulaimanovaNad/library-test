@@ -1,7 +1,7 @@
-import React from 'react'
 import './Header.css'
-import logo from '../../image/logo.png'
+import React from 'react'
 import { Link } from 'react-router-dom'
+import logo from '../../image/logo.png'
 import { useSelector } from 'react-redux'
 
 export default function Header() {

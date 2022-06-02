@@ -1,8 +1,7 @@
 import React from 'react'
-import './AddToWishList.css'
 import { FaHeart } from "react-icons/fa";
-import { useDispatch, useSelector } from 'react-redux'
 import { addToWishList } from '../../store/actions';
+import { useDispatch, useSelector } from 'react-redux'
 
 export default function AddToWishList({book,id}) {
   const wishlist = useSelector(store => store.wishlist)
@@ -19,7 +18,7 @@ export default function AddToWishList({book,id}) {
     }
   return (
     <div>
-        <button onClick={clickToAddToWishList} className='heart'><FaHeart/></button>
+        <button onClick={clickToAddToWishList} className='crud-button'><FaHeart/></button>
     </div>
   )
 }

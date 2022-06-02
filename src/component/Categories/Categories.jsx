@@ -1,9 +1,9 @@
-import { useState } from 'react'
 import './Categories.css'
+import { useState } from 'react'
 import { useDispatch } from 'react-redux'
+import { AiFillCaretUp } from "react-icons/ai";
 import { genreBook } from '../../store/actions';
 import { AiFillCaretDown } from "react-icons/ai";
-import { AiFillCaretUp } from "react-icons/ai";
 
 export default function Categories() {
     const dispatch = useDispatch();

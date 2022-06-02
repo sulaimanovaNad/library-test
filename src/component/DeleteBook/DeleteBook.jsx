@@ -1,6 +1,6 @@
 import React from 'react'
-import './DeleteBook.css'
 import { useDispatch } from 'react-redux'
+import { AiOutlineClose } from "react-icons/ai";
 import { deleteBook } from '../../store/actions';
 
 export default function DeleteBook({id}) {
@@ -10,7 +10,7 @@ export default function DeleteBook({id}) {
     }
   return (
     <div>
-        <button className='delete-button' onClick={clickToDelete}>X</button>
+        <button className='crud-button' onClick={clickToDelete}><AiOutlineClose/></button>
     </div>
   )
 }

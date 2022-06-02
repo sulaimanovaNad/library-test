@@ -15,6 +15,14 @@ export const genreBook = genre => ({
   payload: {genre}
 })
 
+export const editBook = (book,id) => ({
+  type: actions.BOOK_EDIT,
+  payload: {book,id}
+})
+
+
+
+
 export const addToWishList = (book,id) => ({
   type: actions.BOOK_ADD_TO_WISHLIST,
   payload: {book,id}

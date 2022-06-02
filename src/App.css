@@ -27,6 +27,10 @@ button:hover{
   color: #fff;
 }
 
+.add-book-button{
+  margin-left: 10px;
+}
+
 .container{
   width: 90%;
   margin: auto;
@@ -35,4 +39,9 @@ button:hover{
 .image{
   width: 10%;
   margin-right: 20px;
+}
+
+.crud-button{
+  width: 50px;
+  margin-bottom: 15px;
 }

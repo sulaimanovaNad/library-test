@@ -1,8 +1,7 @@
 import React from 'react'
+import image from '../../image/book.png'
 import { useSelector } from 'react-redux'
 import Header from '../../component/Header/Header'
-import './WishList.css'
-import image from '../../image/book.png'
 import DeleteFromWishList from '../../component/DeleteFromWishList/DeleteFromWishList';
 
 export default function WishList() {

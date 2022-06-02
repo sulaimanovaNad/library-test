@@ -22,8 +22,8 @@ const initialState = {
       genre: 'Thriller'
     }
   ],
-  categories:[],
-  wishlist:[]
+  categories: [],
+  wishlist: []
 }
 
 export default function reducer(state = initialState, action) {
@@ -42,17 +42,17 @@ export default function reducer(state = initialState, action) {
       return {
         ...state,
         categories: state.books.filter(b => {
-          if(action.payload.genre == b.genre){
+          if (action.payload.genre == b.genre) {
             return b
           }
         })
       };
-      case actions.BOOK_ADD_TO_WISHLIST:
+    case actions.BOOK_ADD_TO_WISHLIST:
       return {
         ...state,
         wishlist: [...state.wishlist, action.payload.book]
       };
-      case actions.BOOK_DELETE_FROM_WISHLIST:
+    case actions.BOOK_DELETE_FROM_WISHLIST:
       return {
         ...state,
         wishlist: state.wishlist.filter(b => action.payload.id !== b.id)
