@@ -30,7 +30,15 @@ export default function AddBook() {
   }
 
   const handleAddBook = () => {
-    dispatch(addBook(newBook))
+    if(name === ''){
+      alert('Please enter name')
+    }else if(author === ''){
+      alert('Please enter author')
+    }else if(genre === ''){
+      alert('Please enter genre')
+    }else{
+      dispatch(addBook(newBook))
+    }
     setName('')
     setAuthor('')
     setGenre('')

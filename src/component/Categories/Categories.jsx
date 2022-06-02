@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './Categories.css'
 import { useDispatch } from 'react-redux'
 import { genreBook } from '../../store/actions';
+import { AiFillCaretDown } from "react-icons/ai";
+import { AiFillCaretUp } from "react-icons/ai";
 
 export default function Categories() {
     const dispatch = useDispatch();
@@ -27,7 +29,8 @@ export default function Categories() {
         <div className="genre">
             <label>Choose a genre:</label>
             <div className='genre-list'>
-                <div className='genre-item' onClick={handleShowList}>Genre</div>
+                {!showList && <div className='genre-item' onClick={handleShowList}>Genre <AiFillCaretDown/></div>}
+                {showList && <div className='genre-item' onClick={handleShowList}>Genre <AiFillCaretUp/></div>}
                 {showList &&
                    <div>
                         <div>

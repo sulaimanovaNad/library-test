@@ -1,9 +1,13 @@
 .genre{
     display: flex;
+    font-size: 20px;
 }
 
 .genre-item{
-    cursor:pointer
+    cursor:pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid rgb(7, 48, 46);
 }
 
 .genre-item-list{
@@ -12,5 +16,6 @@
 }
 
 .genre-item:hover{
-    background-color: rgba(0, 0, 0, 0.267);
+    background-color: rgb(7, 48, 46);
+    color: #fff;
 }
