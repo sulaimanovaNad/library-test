@@ -27,8 +27,21 @@ header .container{
     color: rgb(185, 187, 72);
     text-decoration: none;
     margin-left: 30px;
+    position: relative;
 }
 
 .links:hover{
     color: rgb(234, 238, 17);
+}
+
+.red-quantity{
+    position: absolute;
+    top: -20px;
+    right: -25px;
+    border: 2px solid rgb(185, 187, 72);
+    border-radius: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 20px;
 }

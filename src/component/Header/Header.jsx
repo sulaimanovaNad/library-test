@@ -2,8 +2,11 @@ import React from 'react'
 import './Header.css'
 import logo from '../../image/logo.png'
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 export default function Header() {
+  const wishlist = useSelector(store => store.wishlist)
+  const quantity = wishlist.length
   return (
     <div>
       <header>
@@ -13,7 +16,9 @@ export default function Header() {
           </div>
           <div>
             <Link className='links' to="/">Library</Link>
-            <Link className='links' to="/wishlist">WishList</Link>
+            <Link className='links' to="/wishlist">WishList
+            <div className='red-quantity'>{quantity}</div>
+            </Link>
           </div>
         </div>
       </header>

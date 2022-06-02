@@ -2,6 +2,7 @@ import React from 'react'
 import './BookList.css'
 import image from '../../image/book.png'
 import DeleteBook from '../DeleteBook/DeleteBook';
+import AddToWishList from '../AddToWishList/AddToWishList';
 
 export default function BookList({books,categories,showCategories}) {
     books.sort((a,b) => a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1)
@@ -20,7 +21,10 @@ export default function BookList({books,categories,showCategories}) {
                             <div className="genre">{book.genre}</div>
                         </div>
                     </div>
+                    <div>
                     <DeleteBook id={book.id}/>
+                    <AddToWishList book={book} id={book.id}/>
+                    </div>
                 </div>
             ))}
             {showCategories && categories.map(book => (
@@ -35,7 +39,10 @@ export default function BookList({books,categories,showCategories}) {
                             <div className='genre'>{book.genre}</div>
                         </div>
                     </div>
+                    <div>
                     <DeleteBook id={book.id}/>
+                    <AddToWishList book={book} id={book.id}/>
+                    </div>
                 </div>))
             }
         </div>
