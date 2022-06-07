@@ -1,0 +1,27 @@
+.add-book{
+    width: 500px;
+    height: 350px;
+    display: flex;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    flex-direction: column;
+}
+
+.add-book input{
+    outline: none;
+    border: none;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.add-book-button{
+    height: 45px;
+    margin: auto;
+}
+
+.add-book-back{
+    height: 620px;
+    padding-top: 60px;
+    background-color: #312539;
+}

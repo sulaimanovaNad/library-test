@@ -9,7 +9,7 @@ export default function DeleteFromWishList({id}) {
     }
   return (
     <div>
-        <button className='delete-button' onClick={clickToDeleteFromWishList}>X</button>
+        <button className='crud-button' onClick={clickToDeleteFromWishList}>X</button>
     </div>
   )
 }

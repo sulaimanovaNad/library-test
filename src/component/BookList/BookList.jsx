@@ -1,6 +1,5 @@
 import './BookList.css'
 import React from 'react'
-import image from '../../image/book.png'
 import DeleteBook from '../DeleteBook/DeleteBook';
 import AddToWishList from '../AddToWishList/AddToWishList';
 
@@ -13,7 +12,7 @@ export default function BookList({books,categories,showCategories}) {
                 <div className='book' key={book.id}>
                     <div className="links-book">
                         <div className='image'>
-                            <img src={image} alt="" />
+                            <img src={book.image} alt="" />
                         </div>
                         <div>
                             <a className="name" href='#'>{book.name}</a>
@@ -31,7 +30,7 @@ export default function BookList({books,categories,showCategories}) {
                 <div className='book' key={book.id}>
                     <div className="links-book">
                         <div className='image'>
-                            <img src={image} alt="" />
+                            <img src={book.image} alt="" />
                         </div>
                         <div>
                             <a className='name' href='#'>{book.name}</a>

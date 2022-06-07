@@ -21,8 +21,8 @@ export default function Categories() {
         dispatch(genreBook('Novel'))
     }
 
-    const handleShowThriller = () => {
-        dispatch(genreBook('Thriller'))
+    const handleShowNonFiction = () => {
+        dispatch(genreBook('Non-fiction'))
     }
 
     return (
@@ -36,7 +36,7 @@ export default function Categories() {
                         <div>
                         <div className='genre-item' onClick={handleShowFantasy}>Fantasy</div>
                         <div className='genre-item' onClick={handleShowNovel}>Novel</div>
-                        <div className='genre-item' onClick={handleShowThriller}>Thriller</div>
+                        <div className='genre-item' onClick={handleShowNonFiction}>Non-fiction</div>
                     </div>
                    </div>
                 }

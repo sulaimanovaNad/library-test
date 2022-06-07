@@ -1,27 +1,8 @@
 import * as actions from './actionTypes';
-import { v4 as uuidv4 } from 'uuid';
+import {libraryList} from '../LibraryList/librarylist'
 
 const initialState = {
-  books: [
-    {
-      id: uuidv4(),
-      name: 'Harry Potter and the Chamber of Secrets',
-      author: '	J. K. Rowling',
-      genre: 'Fantasy'
-    },
-    {
-      id: uuidv4(),
-      name: 'The Ginger Man',
-      author: 'J. P. Donleavy',
-      genre: 'Novel'
-    },
-    {
-      id: uuidv4(),
-      name: 'The Girl on the Train',
-      author: 'Paula Hawkins',
-      genre: 'Thriller'
-    }
-  ],
+  books: libraryList,
   categories: [],
   wishlist: []
 }

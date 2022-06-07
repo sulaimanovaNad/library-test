@@ -1,0 +1,14 @@
+.wish-back{
+    background-color: #312539;
+}
+
+.wish-container{
+    width: 90%;
+    margin:auto;
+    padding-top: 10%;
+    padding-bottom: 3%;
+}
+
+.wish-container .quantity{
+    padding-bottom: 20px;
+}

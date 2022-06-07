@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+body{
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  box-sizing: border-box;
+}
 
 img{
   width: 100%;
@@ -12,33 +18,39 @@ input{
 }
 
 button{
-  border: 2px solid rgb(7, 48, 46);
-  color: rgb(7, 48, 46);
-  border-radius: 15px;
-  background-color: #fff;
   width: 150px;
   height: 35px;
-  cursor: pointer;
   padding: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  color: #3F3349;
+  border-radius: 15px;
+  background-color: #fff;
+  text-transform: uppercase;
+  border: 2px solid #3F3349;
+  font-family: 'Rubik', sans-serif;
 }
 
 button:hover{
-  background-color: rgb(7, 48, 46);
+  background-color: #3F3349;
   color: #fff;
-}
-
-.add-book-button{
-  margin-left: 10px;
+  box-shadow: 2px 2px 2px #000;
 }
 
 .container{
   width: 90%;
   margin: auto;
+  padding-top: 5%;
+  padding-bottom: 3%;
 }
 
 .image{
-  width: 10%;
+  width: 100px;
+  height: 150px;
+  overflow: hidden;
   margin-right: 20px;
+  box-shadow: -5px 5px 12px 0px #000;
+  border-radius: 5px;
 }
 
 .crud-button{
