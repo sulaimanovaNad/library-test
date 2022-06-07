@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import WishList from './pages/WishList/WishList';
 import Categories from './component/Categories/Categories';
 import Library from './pages/Library/Library'
-import AddBook from './component/AddBook/AddBook';
+import AddBook from './pages/AddBook/AddBook';
 
 function App() {
   return (
