@@ -4,10 +4,12 @@ import WishList from './pages/WishList/WishList';
 import Categories from './component/Categories/Categories';
 import Library from './pages/Library/Library'
 import AddBook from './pages/AddBook/AddBook';
+import Header from './component/Header/Header';
 
 function App() {
   return (
     <div className="App">
+      <Header/>
       <Routes>
         <Route path="/" element={<Library />} />
         <Route path="/addbook" element={<AddBook/>} />

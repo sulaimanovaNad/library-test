@@ -1,8 +1,6 @@
 import './Library.css'
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
-import back from '../../image/back.jpg'
-import Header from '../../component/Header/Header'
 import BookList from '../../component/BookList/BookList'
 import Categories from '../../component/Categories/Categories';
 
@@ -24,7 +22,6 @@ export default function Library() {
 
   return (
     <div>
-      <Header />
       <div className='library'>
         <div className='fon'></div>
         <div className='container'>

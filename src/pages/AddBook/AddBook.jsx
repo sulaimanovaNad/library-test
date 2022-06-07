@@ -53,8 +53,6 @@ export default function AddBook() {
   }
 
   return (
-    <>
-      <Header />
       <div className='add-book-back'>
         <div className="container">
           <div className='add-book'>
@@ -75,6 +73,5 @@ export default function AddBook() {
           </div>
         </div>
       </div>
-    </>
   )
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import './WishList.css'
 import { useSelector } from 'react-redux'
-import Header from '../../component/Header/Header'
 import DeleteFromWishList from '../../component/DeleteFromWishList/DeleteFromWishList';
 
 export default function WishList() {
@@ -9,7 +8,6 @@ export default function WishList() {
   const quantity = wishlist.length
   return (
     <div className='wish-back'>
-      <Header />
       <div className='wish-container'>
         <div className='quantity'>Number of books: <b>{quantity}</b></div>
         <div>
